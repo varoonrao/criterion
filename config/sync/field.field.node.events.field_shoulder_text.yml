@@ -1,0 +1,21 @@
+uuid: ff52fe47-2766-47a2-9e6a-8a4275ec147d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_shoulder_text
+    - node.type.events
+  module:
+    - text
+id: node.events.field_shoulder_text
+field_name: field_shoulder_text
+entity_type: node
+bundle: events
+label: 'Shoulder Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

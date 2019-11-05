@@ -1,0 +1,30 @@
+uuid: 39cff699-ac70-4969-9ed4-9df971cf0335
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_event_type
+field_name: field_event_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Fundriser
+      label: Fundriser
+    -
+      value: Charity
+      label: Charity
+    -
+      value: Other
+      label: Other
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

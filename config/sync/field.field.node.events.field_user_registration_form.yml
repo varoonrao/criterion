@@ -1,0 +1,25 @@
+uuid: 695a5ad7-ed4a-445e-97d0-92e37419fef3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_user_registration_form
+    - node.type.events
+  module:
+    - webform
+id: node.events.field_user_registration_form
+field_name: field_user_registration_form
+entity_type: node
+bundle: events
+label: 'User Registration Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

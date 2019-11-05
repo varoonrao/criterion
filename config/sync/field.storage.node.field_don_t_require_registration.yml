@@ -1,0 +1,18 @@
+uuid: 72688a88-5228-4d10-93a5-235d9ec486bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_don_t_require_registration
+field_name: field_don_t_require_registration
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

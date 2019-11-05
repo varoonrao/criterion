@@ -1,0 +1,23 @@
+uuid: 8e616218-2de1-489e-948a-9128bf6a8559
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_registration_link
+    - node.type.events
+  module:
+    - link
+id: node.events.field_registration_link
+field_name: field_registration_link
+entity_type: node
+bundle: events
+label: 'Registration Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

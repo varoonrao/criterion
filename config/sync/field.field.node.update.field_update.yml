@@ -1,0 +1,21 @@
+uuid: 10eb85a6-d7c0-48a1-be44-083d085cb8b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_update
+    - node.type.update
+  module:
+    - text
+id: node.update.field_update
+field_name: field_update
+entity_type: node
+bundle: update
+label: Update
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

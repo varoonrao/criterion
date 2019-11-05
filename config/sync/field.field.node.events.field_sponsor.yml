@@ -1,0 +1,29 @@
+uuid: 76a1266a-39b4-4e9d-8be0-616b957b8452
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sponsor
+    - node.type.events
+    - taxonomy.vocabulary.sponsors
+id: node.events.field_sponsor
+field_name: field_sponsor
+entity_type: node
+bundle: events
+label: Sponsor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sponsors: sponsors
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: sponsors
+field_type: entity_reference

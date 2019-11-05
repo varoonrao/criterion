@@ -1,0 +1,177 @@
+uuid: a65d16a6-60f4-480c-9bff-83a4bb394871
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.events.body
+    - field.field.node.events.field_audience
+    - field.field.node.events.field_don_t_require_registration
+    - field.field.node.events.field_event_type
+    - field.field.node.events.field_i
+    - field.field.node.events.field_pa
+    - field.field.node.events.field_price
+    - field.field.node.events.field_registration_link
+    - field.field.node.events.field_shoulder_text
+    - field.field.node.events.field_sponsor
+    - field.field.node.events.field_teaser_image
+    - field.field.node.events.field_title
+    - field.field.node.events.field_topics
+    - field.field.node.events.field_user_registration_form
+    - field.field.node.events.field_venue
+    - image.style.teaser_image
+    - node.type.events
+  module:
+    - field_group
+    - image
+    - link
+    - options
+    - text
+    - user
+    - webform
+third_party_settings:
+  field_group:
+    group_teaser_info:
+      children:
+        - field_shoulder_text
+        - field_teaser_image
+      parent_name: ''
+      weight: 13
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: 'Shoulder Text'
+id: node.events.default
+targetEntityType: node
+bundle: events
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_audience:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_don_t_require_registration:
+    weight: 3
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_event_type:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_i:
+    weight: 5
+    label: above
+    settings:
+      image_style: image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_pa:
+    weight: 6
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_price:
+    weight: 7
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_registration_link:
+    weight: 8
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_shoulder_text:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_sponsor:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_teaser_image:
+    weight: 4
+    label: above
+    settings:
+      image_style: teaser_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_topics:
+    weight: 10
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_user_registration_form:
+    weight: 11
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_venue:
+    weight: 12
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_title: true

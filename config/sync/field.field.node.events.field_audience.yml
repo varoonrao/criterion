@@ -1,0 +1,21 @@
+uuid: dc434d1c-0d58-44da-9f0f-10c7ad198035
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audience
+    - node.type.events
+  module:
+    - options
+id: node.events.field_audience
+field_name: field_audience
+entity_type: node
+bundle: events
+label: Audience
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

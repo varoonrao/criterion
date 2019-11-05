@@ -1,0 +1,34 @@
+uuid: bb0b5e7a-59ab-4ea5-b085-d976af446572
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.sponsors.field_sponsor_image
+    - image.style.thumbnail
+    - taxonomy.vocabulary.sponsors
+  module:
+    - image
+id: taxonomy_term.sponsors.default
+targetEntityType: taxonomy_term
+bundle: sponsors
+mode: default
+content:
+  field_sponsor_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true

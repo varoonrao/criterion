@@ -1,0 +1,30 @@
+uuid: 0e5d2b9d-9034-4c1d-8849-144dbd6d4eb4
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - taxonomy
+id: taxonomy_term.field_sponsor_image
+field_name: field_sponsor_image
+entity_type: taxonomy_term
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 1b9f4a99-7688-42af-af8a-4438666a72ab
+    alt: ''
+    title: ''
+    width: 512
+    height: 512
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

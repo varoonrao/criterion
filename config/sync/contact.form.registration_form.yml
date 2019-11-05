@@ -1,0 +1,12 @@
+uuid: 1f97310a-15b8-48cc-8bec-f6cabf9afafe
+langcode: en
+status: true
+dependencies: {  }
+id: registration_form
+label: 'Registration Form'
+recipients:
+  - varun@specbee.com
+reply: ''
+weight: 0
+message: done!!
+redirect: '/localhost:32841/'
