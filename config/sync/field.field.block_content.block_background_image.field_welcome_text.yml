@@ -1,0 +1,24 @@
+uuid: 913db99f-ce19-4d1c-9ca0-891ef1de7523
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_background_image
+    - field.storage.block_content.field_welcome_text
+  module:
+    - text
+id: block_content.block_background_image.field_welcome_text
+field_name: field_welcome_text
+entity_type: block_content
+bundle: block_background_image
+label: 'Welcome Text'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Hello, Welcome.'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

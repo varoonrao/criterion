@@ -5,8 +5,24 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.events.body
+    - field.field.node.events.field_audience
+    - field.field.node.events.field_don_t_require_registration
+    - field.field.node.events.field_event_type
+    - field.field.node.events.field_i
+    - field.field.node.events.field_pa
+    - field.field.node.events.field_price
+    - field.field.node.events.field_registration_link
+    - field.field.node.events.field_shoulder_text
+    - field.field.node.events.field_sponsor
+    - field.field.node.events.field_teaser_image
+    - field.field.node.events.field_title
+    - field.field.node.events.field_topics
+    - field.field.node.events.field_user_registration_form
+    - field.field.node.events.field_venue
+    - image.style.teaser_image
     - node.type.events
   module:
+    - image
     - text
     - user
 id: node.events.teaser
@@ -14,17 +30,38 @@ targetEntityType: node
 bundle: events
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
+  field_shoulder_text:
+    type: text_default
+    weight: 0
     region: content
-  links:
-    weight: 100
+    label: above
     settings: {  }
     third_party_settings: {  }
+  field_teaser_image:
+    type: image
+    weight: 1
     region: content
-hidden: {  }
+    label: above
+    settings:
+      image_style: teaser_image
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_audience: true
+  field_don_t_require_registration: true
+  field_event_type: true
+  field_i: true
+  field_pa: true
+  field_price: true
+  field_registration_link: true
+  field_sponsor: true
+  field_title: true
+  field_topics: true
+  field_user_registration_form: true
+  field_venue: true

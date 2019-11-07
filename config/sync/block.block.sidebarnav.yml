@@ -1,0 +1,25 @@
+uuid: 862ae031-5794-4e46-b139-44dfe5a694db
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.sidebar-nav
+  module:
+    - system
+  theme:
+    - bartik
+id: sidebarnav
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:sidebar-nav'
+settings:
+  id: 'system_menu_block:sidebar-nav'
+  label: 'Sidebar Nav'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

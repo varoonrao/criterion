@@ -18,30 +18,15 @@ dependencies:
     - field.field.node.events.field_topics
     - field.field.node.events.field_user_registration_form
     - field.field.node.events.field_venue
-    - image.style.teaser_image
+    - image.style.image
     - node.type.events
   module:
-    - field_group
     - image
     - link
     - options
     - text
     - user
     - webform
-third_party_settings:
-  field_group:
-    group_teaser_info:
-      children:
-        - field_shoulder_text
-        - field_teaser_image
-      parent_name: ''
-      weight: 13
-      format_type: fieldset
-      format_settings:
-        id: ''
-        classes: ''
-        description: ''
-      label: 'Shoulder Text'
 id: node.events.default
 targetEntityType: node
 bundle: events
@@ -61,25 +46,15 @@ content:
     third_party_settings: {  }
     type: list_default
     region: content
-  field_don_t_require_registration:
-    weight: 3
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_event_type:
-    weight: 4
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_i:
-    weight: 5
+    weight: 4
     label: above
     settings:
       image_style: image
@@ -87,18 +62,8 @@ content:
     third_party_settings: {  }
     type: image
     region: content
-  field_pa:
-    weight: 6
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_price:
-    weight: 7
+    weight: 5
     label: above
     settings:
       thousand_separator: ''
@@ -109,7 +74,7 @@ content:
     type: number_decimal
     region: content
   field_registration_link:
-    weight: 8
+    weight: 6
     label: above
     settings:
       trim_length: 80
@@ -120,32 +85,16 @@ content:
     third_party_settings: {  }
     type: link
     region: content
-  field_shoulder_text:
-    weight: 3
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_sponsor:
-    weight: 9
+    weight: 7
     label: above
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_teaser_image:
-    weight: 4
-    label: above
-    settings:
-      image_style: teaser_image
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_topics:
-    weight: 10
+    weight: 8
     label: above
     settings:
       link: true
@@ -153,7 +102,7 @@ content:
     type: entity_reference_label
     region: content
   field_user_registration_form:
-    weight: 11
+    weight: 9
     label: above
     settings:
       source_entity: true
@@ -161,7 +110,7 @@ content:
     type: webform_entity_reference_entity_view
     region: content
   field_venue:
-    weight: 12
+    weight: 10
     label: above
     settings:
       link: true
@@ -174,4 +123,8 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_don_t_require_registration: true
+  field_pa: true
+  field_shoulder_text: true
+  field_teaser_image: true
   field_title: true

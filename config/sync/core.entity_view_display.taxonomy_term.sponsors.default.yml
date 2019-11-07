@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.taxonomy_term.sponsors.field_sponsor_image
+    - image.style.thumbnail
     - taxonomy.vocabulary.sponsors
   module:
     - image
@@ -16,7 +17,7 @@ content:
     weight: 0
     label: above
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -1,0 +1,14 @@
+uuid: dac2ff63-0583-4bae-a24e-5f62979786d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.venue_manager_role
+  module:
+    - user
+id: user_add_role_action.venue_manager_role
+label: 'Add the Venue Manager Role role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: venue_manager_role

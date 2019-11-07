@@ -1,0 +1,14 @@
+uuid: 3f403b9d-6289-47a2-8dd9-2d1e1db260c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.venue_manager_role
+  module:
+    - user
+id: user_remove_role_action.venue_manager_role
+label: 'Remove the Venue Manager Role role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: venue_manager_role

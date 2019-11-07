@@ -1,0 +1,9 @@
+uuid: b11ca19e-f5aa-47dd-a09d-b048a5e755e6
+langcode: en
+status: true
+dependencies: {  }
+id: venue_manager_role
+label: 'Venue Manager Role'
+weight: 4
+is_admin: null
+permissions: {  }

@@ -5,9 +5,9 @@ dependencies: {  }
 name: image
 label: Image
 effects:
-  69871953-5c5b-41c1-a8a1-f8012ab85078:
-    uuid: 69871953-5c5b-41c1-a8a1-f8012ab85078
-    id: image_scale_and_crop
+  7da9d564-e368-41e4-a2f6-df6f8b205f4e:
+    uuid: 7da9d564-e368-41e4-a2f6-df6f8b205f4e
+    id: image_crop
     weight: 1
     data:
       width: 650

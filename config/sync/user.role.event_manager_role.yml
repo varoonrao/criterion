@@ -1,0 +1,16 @@
+uuid: b7d4d7a0-0820-4c38-a0f9-498c3e11abab
+langcode: en
+status: true
+dependencies: {  }
+id: event_manager_role
+label: 'Event Manager Role'
+weight: 3
+is_admin: null
+permissions:
+  - 'create events content'
+  - 'create venue content'
+  - 'delete any events content'
+  - 'delete own events content'
+  - 'delete own venue content'
+  - 'edit any events content'
+  - 'edit own venue content'
